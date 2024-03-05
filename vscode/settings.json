@@ -1,0 +1,104 @@
+{
+    "workbench.colorTheme": "Everforest Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "Cousine Nerd Font",
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.lineNumbers": "relative",
+    "editor.cursorBlinking": "solid",
+    "editor.cursorSurroundingLines": 10,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 300,
+    "editor.wrappingIndent": "none",
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.vimrc.path": "$HOME/.vim/vimrc",
+    "vim.vimrc.enable": true,
+    "vim.surround": true,
+    "vim.useCtrlKeys": true,
+    "vim.foldfix": true,
+    "vim.cursorStylePerMode.insert": "line-thin",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.replace": "underline",
+    "vim.cursorStylePerMode.visual": "block",
+    "vim.cursorStylePerMode.visualblock": "block",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "c",
+                "f",
+            ],
+            "commands": [
+                "editor.action.formatDocument",
+            ],
+        },
+        {
+            "before": [
+                "g",
+                "r",
+            ],
+            "commands": [
+                "editor.action.goToReferences",
+            ],
+        },
+        {
+            "before": [
+                "g",
+                "[",
+            ],
+            "commands": [
+                "editor.action.marker.prevInFiles",
+            ],
+        },
+        {
+            "before": [
+                "g",
+                "]",
+            ],
+            "commands": [
+                "editor.action.marker.nextInFiles",
+            ],
+        },
+        {
+            "before": [
+                "<leader>",
+                "1",
+            ],
+            "commands": [
+                "workbench.view.explorer",
+            ],
+        },
+        {
+            "before": [
+                "<leader>",
+                "b",
+                "h",
+            ],
+            "commands": [
+                "workbench.action.closeEditorsToTheLeft",
+            ],
+        },
+        {
+            "before": [
+                "<leader>",
+                "b",
+                "l",
+            ],
+            "commands": [
+                "workbench.action.closeEditorsToTheRight",
+            ],
+        },
+        {
+            "before": [
+                "<leader>",
+                "b",
+                "o",
+            ],
+            "commands": [
+                "workbench.action.closeEditorsToTheLeft",
+                "workbench.action.closeEditorsToTheRight",
+            ],
+        },
+    ]
+}
