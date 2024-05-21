@@ -1,0 +1,8 @@
+gui:
+  scrollHeight: 10
+  mouseEvents: false
+  language: en
+  theme:
+    selectedLineBgColor:
+      - white
+  nerdFontsVersion: 3
