@@ -2,7 +2,7 @@
 	st = status
 	co = checkout
 	br = branch
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lg = "log --graph --date=human --format='%C(#e3c78a)%h%C(#ff5454)%d%C(reset) - %C(#36c692)(%ad)%C(reset) %s %C(#80a0ff){%an}%C(reset)'"
 
 # 如果用delta，则需要添加下方的配置
 # https://github.com/dandavison/delta
