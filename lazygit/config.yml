@@ -3,8 +3,30 @@ gui:
   mouseEvents: false
   language: en
   theme:
+    activeBorderColor:
+      - '#e5c890'
+      - bold
+    inactiveBorderColor:
+      - default
+    optionsTextColor:
+      - '#8caaee'
     selectedLineBgColor:
-      - white
+      - '#414559'
+    cherryPickedCommitBgColor:
+      - '#51576d'
+    cherryPickedCommitFgColor:
+      - '#e5c890'
+    unstagedChangesColor:
+      - '#e78284'
+    defaultFgColor:
+      - default
+    searchingActiveBorderColor:
+      - '#e5c890'
+  authorColors:
+    '*': '#a6d189'
   nerdFontsVersion: 3
 git:
-  branchLogCmd: 'git log --graph --color=always --date=human --format="%C(#e3c78a)%h%C(#ff5454)%d%C(reset) - %C(#36c692)(%ad)%C(reset) %s %C(#80a0ff){%an}%C(reset)" {{branchName}} --'
+  branchLogCmd: 'git log --graph --color=always --date=human --format="%C(#e3c78a)%h%C(#e78284)%d%C(reset) - %C(#36c692)(%ad)%C(reset) %s %C(#80a0ff){%an}%C(reset)" {{branchName}} --'
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
