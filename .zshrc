@@ -28,6 +28,7 @@ fi
 # alias grep='grep --color=auto'
 alias py='python3';
 alias pip='pip3';
+alias lg='lazygit';
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
