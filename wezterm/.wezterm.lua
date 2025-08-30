@@ -2,12 +2,12 @@ local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 local nf = wezterm.nerdfonts
 
-
 -- launch bash
 config.default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe", "-i", "-l" }
 
 -- render mode
 config.front_end = "WebGpu"
+config.webgpu_power_preference = "HighPerformance"
 
 -- font
 config.font_size = 10
@@ -15,7 +15,7 @@ config.font = wezterm.font("Maple Mono NF CN", { weight = "Bold" })
 config.harfbuzz_features = { "calt=0", "cv02=0", "cv31=0", "ss01=0", }
 
 -- theme
-config.color_scheme = 'One Dark (Gogh)'
+config.color_scheme = 'Ocean Dark (Gogh)'
 config.colors = {
   foreground = "#DCDFE4",
   cursor_bg = "#C5B9B3",
