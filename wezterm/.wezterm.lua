@@ -1,9 +1,12 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 local nf = wezterm.nerdfonts
+local os = wezterm.target_triple
 
--- launch bash
-config.default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe", "-i", "-l" }
+if os:find("windows") then
+  -- launch bash
+  config.default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe", "-i", "-l" }
+end
 
 -- render mode
 config.front_end = "WebGpu"
@@ -104,5 +107,13 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
     { Text = nf.ple_right_half_circle_thick },
   }
 end)
+
+-- os overwrite
+if os:find("windows") then
+  config.font_size = 10
+elseif os:find("darwin") then
+  config.font_size = 12
+  config.macos_window_background_blur = 20
+end
 
 return config
